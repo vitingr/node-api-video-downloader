@@ -15,7 +15,6 @@ app.get("/ytdownload", async (req, res) => {
     const { url } = req.query
 
     res.header("Content-Disposition", 'attachmentt; filename="video.mp4"')
-    res.send("Teste")
     return ytdl(url).pipe(res)
 })
 
