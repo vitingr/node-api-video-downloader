@@ -19,7 +19,7 @@ app.get("/ytdownload", async (req, res) => {
     return ytdl(url).pipe(res)
 })
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8081
 
 app.listen(PORT, () => {
     console.log(`Servidor funcionando corretamente na porta ${PORT}`)
